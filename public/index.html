@@ -5,24 +5,44 @@
    <title>Dragon Express</title>
    <link rel="stylesheet" href="stylesheets/styles.css">
 
+
    <!-- LIBRARIES -->
    <script type="text/javascript" src='javascripts/libraries/jquery.js'></script>
    <script type="text/javascript" src='javascripts/libraries/underscore.js'></script>
    <script type="text/javascript" src='javascripts/libraries/backbone.js'></script>
    
+
    <!-- TEMPLATES -->
-   <script type="text/template" class=""></script>
+   <script type="text/template" class="dragon-template">
+      Name: <%- name %><br>
+      Wingspan: <%- wingspan %> hands<br> 
+      Heat Index: <%- heatIndex %><br>
+      <button data-action="destroy">Delete</button>
+      <button data-action="edit">Edit</button>
+   </script>
+
+   <script type="text/template" class="edit-dragon-template">
+      <form>
+         <input type="text" placeholder="<%- name %>"><br>
+         <input type="text" placeholder="<%- wingspan %> hands"><br>
+         <input type="text" placeholder="<%- heatIndex %>">
+      </form>      
+   </script>
+
 
    <!-- MODEL -->
    <script type="text/javascript" src="javascripts/backbone/models/Dragon.js"></script>
 
+
    <!-- COLLECTION -->
    <script type="text/javascript" src="javascripts/backbone/collections/DragonCollection.js"></script>
+
 
    <!-- VIEWS -->
    <script type="text/javascript" src="javascripts/backbone/views/dragons/DragonView.js"></script>
 
    <script type="text/javascript" src="javascripts/backbone/views/dragons/DragonListView.js"></script>
+
 
    <!-- APP -->
    <script type="text/javascript" src='javascripts/backbone/app.js'></script>
@@ -30,9 +50,25 @@
 
 </head>
 <body>
-   
 
-<h1>Dragon Express</h1>
+
+   <h1>Dragon Express</h1>
+
+   <h2>Make a Dragon</h2>
+   <div class="main container">
+      <div class="dragons">
+         <div class="dragon-pen">
+            <form class="dragon-form">
+               <input type="text" classclass="dragon-name" placeholder="...Name">
+               <input type="text" class="dragon-wingspan" placeholder="...Wingspan">
+               <input type="text" class="dragon-heat-index" placeholder="...Heat Index">
+               <input type="submit" value="Add Dragon">
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <ul class="dragon-list"></ul>
 
 </body>
 </html>
