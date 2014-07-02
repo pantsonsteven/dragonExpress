@@ -12,7 +12,7 @@ DragonExpress.initialize = function() {
       el         : $(".dragon-list")
    });
 
-   // collection.fetch();
+   collection.fetch();
 
    $('.dragon-form').submit(function(e) {
       e.preventDefault();
