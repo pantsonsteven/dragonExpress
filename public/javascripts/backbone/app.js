@@ -14,8 +14,8 @@ DragonExpress.initialize = function() {
 
    // collection.fetch();
 
-   $('.dragons').find('form').submit(function(e) {
-      e.preventDefault;
+   $('.dragon-form').submit(function(e) {
+      e.preventDefault();
 
       var name       = $('.dragon-name').val();
       var wingspan   = $('.dragon-wingspan').val();

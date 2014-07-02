@@ -22,13 +22,13 @@
    </script>
 
    <script type="text/template" class="edit-dragon-template">
-      <form>
-         <input type="text" placeholder="<%- name %>"><br>
-         <input type="text" placeholder="<%- wingspan %> hands"><br>
-         <input type="text" placeholder="<%- heatIndex %>">
+      <form class="edit-dragon-form">
+         <input type="text" value="<%- name %>" class="edit-dragon-name"><br>
+         <input type="text" value="<%- wingspan %>" class="edit-dragon-wingspan"><br>
+         <input type="text" value="<%- heatIndex %>" class="edit-dragon-heat-index">
+         <input type="submit" value="Submit Changes">
       </form>      
    </script>
-
 
    <!-- MODEL -->
    <script type="text/javascript" src="javascripts/backbone/models/Dragon.js"></script>
@@ -56,15 +56,13 @@
 
    <h2>Make a Dragon</h2>
    <div class="main container">
-      <div class="dragons">
-         <div class="dragon-pen">
-            <form class="dragon-form">
-               <input type="text" classclass="dragon-name" placeholder="...Name">
-               <input type="text" class="dragon-wingspan" placeholder="...Wingspan">
-               <input type="text" class="dragon-heat-index" placeholder="...Heat Index">
-               <input type="submit" value="Add Dragon">
-            </form>
-         </div>
+      <div class="dragon-pen">
+         <form class="dragon-form">
+            <input type="text" class="dragon-name" placeholder="...Name">
+            <input type="text" class="dragon-wingspan" placeholder="...Wingspan">
+            <input type="text" class="dragon-heat-index" placeholder="...Heat Index">
+            <input type="submit" value="Add Dragon">
+         </form>
       </div>
    </div>
 

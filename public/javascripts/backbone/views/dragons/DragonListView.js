@@ -15,6 +15,5 @@ DragonExpress.Views.DragonListView = Backbone.View.extend({
          var dragonView = new DragonExpress.Views.DragonView({ model: dragon });
          that.$el.prepend(dragonView.render().el);
       });
-
    }
 });
