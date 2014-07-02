@@ -47,7 +47,7 @@ DragonExpress.Views.DragonView = Backbone.View.extend({
             heatIndex   : newHeatIndex
          });
 
-         // that.model.save();
+         that.model.save();
       });
       return this;
    },

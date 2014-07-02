@@ -6,5 +6,5 @@ var DragonExpress = DragonExpress || {
 
 DragonExpress.Collections.DragonCollection = Backbone.Collection.extend({
    model : DragonExpress.Models.Dragon,
-   // url   : '/api/dragons'
+   url   : '/api/dragons'
 });
