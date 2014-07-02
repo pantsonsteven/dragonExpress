@@ -25,7 +25,7 @@ exports.update = function(req, res) {
       heatIndex   : req.body.heatIndex     
    }, function(err, dragon) {
       if (err) return console.log(err);
-      res.send({'success': "Dragon Updated"});
+      res.send({"success": "Dragon Updated"});
    });
 };
 
