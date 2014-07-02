@@ -19,8 +19,6 @@ DragonExpress.Views.DragonView = Backbone.View.extend({
    events            : {
       'click [data-action="destroy"]'  : 'destroyDragon',
       'click [data-action="edit"]'     : 'renderEditForm',
-      'mouseenter'                     : 'glow',
-      'mouseleave'                     : 'unglow'
    },
    destroyDragon     : function(e) {
       e.preventDefault();
@@ -50,12 +48,5 @@ DragonExpress.Views.DragonView = Backbone.View.extend({
          that.model.save();
       });
       return this;
-   },
-   glow              : function() {
-      this.$el.css("box-shadow", "0px 0px 10px #fff1a1");
-      return this;
-   },
-   unglow            : function() {
-      this.$el.css("box-shadow", "0 0 0")
    }
 });
