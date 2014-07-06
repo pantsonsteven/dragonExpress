@@ -26,9 +26,9 @@ DragonExpress.initialize = function() {
       $('.dragon-heat-index') .val('');
 
       collection.create({  
-         name: name,
-         wingspan: wingspan, 
-         heatIndex: heatIndex 
+         name        : name,
+         wingspan    : wingspan, 
+         heatIndex   : heatIndex 
       });
    });
 };
